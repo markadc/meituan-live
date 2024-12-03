@@ -1,0 +1,683 @@
+{
+  "code": 0,
+  "msg": null,
+  "data": {
+    "goodsTotalCount": 3,
+    "goodsTypeCount": 0,
+    "goodsList": [
+      {
+        "goodsId": "1202883493",
+        "goodsType": 9,
+        "buId": 24,
+        "titleInfo": {
+          "title": "直播间专属·单人海鲜通用自助",
+          "titleTagList": null
+        },
+        "hot": false,
+        "top": false,
+        "index": 1,
+        "order": "1",
+        "goodsSaleStatus": 0,
+        "picUrl": "http://p0.meituan.net/deal/2b677054ea0f3df544d2802e8ee2bbc4588225.jpg",
+        "goodsLinkUrl": "",
+        "degradeGoodsLinkUrl": "dianping://fooddealdetail?id=1202883493&shopid=617819274&shopidEncrypt=qB4r10797faf0fb19ee464b025905d70711afcbe64359ae9791ea0c22835b372728d8c3b41ad86aeb4be712836225ff6vxu5&source=foodLiveStreaming&businessType=foodLiveStreaming&nibBizConsistency=gmV2peeKZ5C2xJqoC9o14FSLvcWhgwwkWP6FfVeiNlhkQM4gbPJyqOWQUzZBK4Cf-7g_sPj_Hgy-tqG7FVfg2MR8wIz-iY2AFQwJJm5eFpOATH2ivUoiy-wHRWDQZDFZ9xxiMusnBUn74OoV1U413UyF3XrGASBTWLV8w9KT2nCOIY_7wSOKDB5v2SNR7r5DhFy837ULdwEi3V9hUtNlgJ29kBjfqbA-9lVdLoMS1l6OB7Yhoepi4vLU3yOsYjZTlD5D7t7_3zLmw1pjsuAHHg&cApiFlowChannel=dpFoodLive&mrn_min_version=0.328.10&mlive_ext=%7B%22mlid%22%3A9068307%2C%22tid%22%3A%225b1eaba3641247e99ba2a56f25266848%22%2C%22anchor_id%22%3A431516%7D",
+        "goodsPriceInfo": {
+          "preText": null,
+          "postText": null,
+          "marketPrice": "128.00",
+          "salePrice": "69.80",
+          "salePriceSuffix": null,
+          "discount": "5.5折",
+          "crossPrice": null,
+          "priceTips": null,
+          "multiPriceDescription": null,
+          "priceAdjectiveTag": null,
+          "discountPrice": null,
+          "hidden": false,
+          "hiddenText": null,
+          "marketCrossPrice": null,
+          "reductionActivityTag": null,
+          "activityTagList": [
+            {
+              "template": "tagPink",
+              "text": "直播品",
+              "code": 7,
+              "rank": 1,
+              "hover": "直播渠道可售，poi货架不可售商品",
+              "activityTagType": null
+            }
+          ],
+          "inGray": true,
+          "unitPrice": null,
+          "unitType": null,
+          "unitCount": null
+        },
+        "buttonList": [
+          {
+            "gray": false,
+            "template": "buy",
+            "text": "马上抢",
+            "linkUrl": "dianping://mrn?mrn_biz=meishi&mrn_entry=c-group-order-submit&mrn_component=GroupOrderSubmit&dealID=1202883493&source=foodLiveStreaming&nibBizConsistency=gmV2peeKZ5C2xJqoC9o14FSLvcWhgwwkWP6FfVeiNlhkQM4gbPJyqOWQUzZBK4Cf-7g_sPj_Hgy-tqG7FVfg2MR8wIz-iY2AFQwJJm5eFpOATH2ivUoiy-wHRWDQZDFZ9xxiMusnBUn74OoV1U413UyF3XrGASBTWLV8w9KT2nCOIY_7wSOKDB5v2SNR7r5DhFy837ULdwEi3V9hUtNlgJ29kBjfqbA-9lVdLoMS1l6OB7Yhoepi4vLU3yOsYjZTlD5D7t7_3zLmw1pjsuAHHg&mlive_ext=%7B%22mlid%22%3A9068307%2C%22tid%22%3A%225b1eaba3641247e99ba2a56f25266848%22%2C%22anchor_id%22%3A431516%7D",
+            "hintText": null,
+            "bubbleButtonGray": false,
+            "halfScreenGoodsLinkUrl": null
+          }
+        ],
+        "marketingInfoAggList": [
+          {
+            "marketingInfoItemList": [
+              {
+                "template": "textGray",
+                "text": "拜丝特牛排海鲜自助餐厅（毕节店）",
+                "preText": null,
+                "postText": null,
+                "showOnBubble": false,
+                "bubbleText": "拜丝特牛排海鲜自助餐厅（毕节店）",
+                "targetKey": "recallShopInfo",
+                "sortWeight": 0
+              }
+            ],
+            "showOnBubble": true
+          },
+          {
+            "marketingInfoItemList": [
+              {
+                "template": "tagGray",
+                "text": "随时退·过期自动退",
+                "preText": null,
+                "postText": null,
+                "showOnBubble": false,
+                "bubbleText": "随时退·过期自动退",
+                "targetKey": "goodsTags",
+                "sortWeight": 0
+              },
+              {
+                "template": "tagGray",
+                "text": "免预约",
+                "preText": null,
+                "postText": null,
+                "showOnBubble": false,
+                "bubbleText": "免预约",
+                "targetKey": "goodsTags",
+                "sortWeight": 0
+              },
+              {
+                "template": "tagGray",
+                "text": "直播专享",
+                "preText": null,
+                "postText": null,
+                "showOnBubble": false,
+                "bubbleText": "直播专享",
+                "targetKey": "goodsTags",
+                "sortWeight": 0
+              },
+              {
+                "template": "tagGray",
+                "text": "直播优惠10.2",
+                "preText": null,
+                "postText": null,
+                "showOnBubble": false,
+                "bubbleText": "直播优惠10.2",
+                "targetKey": "goodsTags",
+                "sortWeight": 0
+              },
+              {
+                "template": "tagGray",
+                "text": "100%好评",
+                "preText": null,
+                "postText": null,
+                "showOnBubble": false,
+                "bubbleText": "100%好评",
+                "targetKey": "goodsTags",
+                "sortWeight": 0
+              },
+              {
+                "template": "tagGray",
+                "text": "直播优惠",
+                "preText": null,
+                "postText": null,
+                "showOnBubble": false,
+                "bubbleText": "直播优惠",
+                "targetKey": "goodsTags",
+                "sortWeight": 0
+              }
+            ],
+            "showOnBubble": false
+          }
+        ],
+        "buyStatus": 0,
+        "cantBuyText": null,
+        "userLike": null,
+        "reviewResultErrorInfo": null,
+        "customGoodsStatus": 104,
+        "remainStock": null,
+        "trackingInfo": {
+          "eventTracking": "{\"live_tracking_info\":{\"mlive_ext_map\":\"{\\\"mlid\\\":9068307,\\\"tid\\\":\\\"5b1eaba3641247e99ba2a56f25266848\\\",\\\"anchor_id\\\":431516}\"}}",
+          "shopId": 0,
+          "encryptShopId": null
+        },
+        "customExtension": {
+          "mlive_ext_map": "{\"mlid\":9068307,\"tid\":\"5b1eaba3641247e99ba2a56f25266848\",\"anchor_id\":431516}"
+        },
+        "goodsValidStatus": 0,
+        "bubblePopupStatus": 0,
+        "recommend": false,
+        "recommendTag": null,
+        "couponInfoList": null,
+        "addCouponStatus": 1,
+        "outBizGoodsId": "1202883493",
+        "goodsSellType": 0,
+        "extensionMap": {
+          "discnt_effort_live_stream_reduction": "10.2",
+          "halfScreenDetailUrl": "imeituan://www.meituan.com/mrn?id=1202883493&shopid=617819274&shopidEncrypt=qB4r10797faf0fb19ee464b025905d70711afcbe64359ae9791ea0c22835b372728d8c3b41ad86aeb4be712836225ff6vxu5&source=foodLiveStreaming&businessType=foodLiveStreaming&nibBizConsistency=gmV2peeKZ5C2xJqoC9o14FSLvcWhgwwkWP6FfVeiNlhkQM4gbPJyqOWQUzZBK4Cf-7g_sPj_Hgy-tqG7FVfg2MR8wIz-iY2AFQwJJm5eFpOATH2ivUoiy-wHRWDQZDFZ9xxiMusnBUn74OoV1U413UyF3XrGASBTWLV8w9KT2nCOIY_7wSOKDB5v2SNR7r5DhFy837ULdwEi3V9hUtNlgJ29kBjfqbA-9lVdLoMS1l6OB7Yhoepi4vLU3yOsYjZTlD5D7t7_3zLmw1pjsuAHHg&cApiFlowChannel=dpFoodLive&mrn_biz=meishi&mrn_component=food-deal&mrn_entry=food-deal&mliveSuppStyle=1&mrn_min_version=0.0.0",
+          "sales_channel_desc_list": "特团,直播,圈圈",
+          "productHide": "true",
+          "sales_channel_desc_list_id": "MTQQ,costEffective,foodLiveStreaming",
+          "discnt_effort_goods_salable_coupon": "0",
+          "nibBizConsistency": "gmV2peeKZ5C2xJqoC9o14FSLvcWhgwwkWP6FfVeiNlhkQM4gbPJyqOWQUzZBK4Cf-7g_sPj_Hgy-tqG7FVfg2MR8wIz-iY2AFQwJJm5eFpOATH2ivUoiy-wHRWDQZDFZ9xxiMusnBUn74OoV1U413UyF3XrGASBTWLV8w9KT2nCOIY_7wSOKDB5v2SNR7r5DhFy837ULdwEi3V9hUtNlgJ29kBjfqbA-9lVdLoMS1l6OB7Yhoepi4vLU3yOsYjZTlD5D7t7_3zLmw1pjsuAHHg",
+          "canJumpToLiveDetail": "true",
+          "IS_MEMBER_PRODUCT": "false"
+        },
+        "hasRemind": null,
+        "secKillInfo": null,
+        "goodsNum": null,
+        "waimaiProductPackageUrl": null,
+        "commission": null,
+        "poiId": 617819274,
+        "distance": 10000,
+        "goodsOrderIndicatorInfo": null,
+        "goodsFlowIndicatorInfo": null,
+        "commissonRate": null,
+        "productId": null,
+        "explainStatus": 0,
+        "needQueryGoodsInfoBeforeHit": false,
+        "goodsDetailDisplayStyle": 0,
+        "halfScreenGoodsLinkUrl": null,
+        "goodsShelfType": null,
+        "canSell": false,
+        "notLiveSaleChannel": false,
+        "unLiveSaleReason": null,
+        "allowSelling": 1,
+        "seeExplainInfo": {
+          "goodsExplainStatus": 0,
+          "explainPlaybackUrl": null,
+          "duration": 0
+        },
+        "goodsDeliveryInfo": null,
+        "deleteGoodsFromInvestment": false,
+        "brandName": null,
+        "soldNum": null,
+        "salesChannelDescList": [
+          "特团",
+          "直播",
+          "圈圈"
+        ],
+        "defaultCityPriceShowTag": null,
+        "reductionActivityInfo": null,
+        "soldNumText": null,
+        "shopInfoDTO": null,
+        "hotSellingTag": null,
+        "subGoodsType": null,
+        "goodsTypeName": null,
+        "supportSecKill": true,
+        "notBeginSecKillActivityIds": null,
+        "secKillAvailableType": -1,
+        "filterReason": null,
+        "unauthorized": false,
+        "auditFailureReasons": null,
+        "shopStatisticalInfo": null,
+        "discountCouponList": null,
+        "explainTime": null,
+        "diagnosticTagList": null,
+        "afterBuyRebateInfo": null
+      },
+      {
+        "goodsId": "1199701503",
+        "goodsType": 9,
+        "buId": 24,
+        "titleInfo": {
+          "title": "【郑花花】实惠双人餐",
+          "titleTagList": null
+        },
+        "hot": false,
+        "top": false,
+        "index": 2,
+        "order": "2",
+        "goodsSaleStatus": 0,
+        "picUrl": "http://p0.meituan.net/deal/53c15f0c6cecc81c88c2cb5555a071da509759.jpg",
+        "goodsLinkUrl": "",
+        "degradeGoodsLinkUrl": "dianping://fooddealdetail?id=1199701503&shopid=736356892&shopidEncrypt=qB4r117b7ea40bbe94ea62b025905d70711afcbe64359ae9791ea0c22835b372728d8c3b41ad86aeb4be712836225ff6vxu5&source=foodLiveStreaming&businessType=foodLiveStreaming&nibBizConsistency=gmV2peeKZ5C2xJqoC9o14FSLvcWhgwwkWP6FfVeiNlg4wK0FhgP3LNn_dw25stjTbB9VIJgx9d9xkFCdJmnK9dj6wvnqgvtaEwwbKsTKeGoHVrfbMW7OBP0kPUDxfCZk_FmGW39p-fBU3vHB0DZLnWOHFF7WePl3uhhbPhoPp3SJZ_dXXZEqAPnssChIMcAXhNfaAuI5v0ZMfhDYkxr1sbgT1A6fHIgbpMXyMT4ZL-tW4MhiYNKvQ1NFUSQtcLEMi0Kh-ltQ4I_e5cUjCjlA5Q&cApiFlowChannel=dpFoodLive&mrn_min_version=0.328.10&mlive_ext=%7B%22mlid%22%3A9068307%2C%22tid%22%3A%224623371e6fcb463db7312d71d425275c%22%2C%22anchor_id%22%3A431516%7D",
+        "goodsPriceInfo": {
+          "preText": null,
+          "postText": null,
+          "marketPrice": "175.00",
+          "salePrice": "48.00",
+          "salePriceSuffix": null,
+          "discount": "2.8折",
+          "crossPrice": null,
+          "priceTips": null,
+          "multiPriceDescription": null,
+          "priceAdjectiveTag": null,
+          "discountPrice": null,
+          "hidden": false,
+          "hiddenText": null,
+          "marketCrossPrice": null,
+          "reductionActivityTag": null,
+          "activityTagList": [
+            {
+              "template": "tagPink",
+              "text": "直播品",
+              "code": 7,
+              "rank": 1,
+              "hover": "直播渠道可售，poi货架不可售商品",
+              "activityTagType": null
+            }
+          ],
+          "inGray": true,
+          "unitPrice": null,
+          "unitType": null,
+          "unitCount": null
+        },
+        "buttonList": [
+          {
+            "gray": false,
+            "template": "buy",
+            "text": "马上抢",
+            "linkUrl": "dianping://mrn?mrn_biz=meishi&mrn_entry=c-group-order-submit&mrn_component=GroupOrderSubmit&dealID=1199701503&source=foodLiveStreaming&nibBizConsistency=gmV2peeKZ5C2xJqoC9o14FSLvcWhgwwkWP6FfVeiNlg4wK0FhgP3LNn_dw25stjTbB9VIJgx9d9xkFCdJmnK9dj6wvnqgvtaEwwbKsTKeGoHVrfbMW7OBP0kPUDxfCZk_FmGW39p-fBU3vHB0DZLnWOHFF7WePl3uhhbPhoPp3SJZ_dXXZEqAPnssChIMcAXhNfaAuI5v0ZMfhDYkxr1sbgT1A6fHIgbpMXyMT4ZL-tW4MhiYNKvQ1NFUSQtcLEMi0Kh-ltQ4I_e5cUjCjlA5Q&mlive_ext=%7B%22mlid%22%3A9068307%2C%22tid%22%3A%224623371e6fcb463db7312d71d425275c%22%2C%22anchor_id%22%3A431516%7D",
+            "hintText": null,
+            "bubbleButtonGray": false,
+            "halfScreenGoodsLinkUrl": null
+          }
+        ],
+        "marketingInfoAggList": [
+          {
+            "marketingInfoItemList": [
+              {
+                "template": "textGray",
+                "text": "郑花花社区老火锅（抚琴店）",
+                "preText": null,
+                "postText": null,
+                "showOnBubble": false,
+                "bubbleText": "郑花花社区老火锅（抚琴店）",
+                "targetKey": "recallShopInfo",
+                "sortWeight": 0
+              }
+            ],
+            "showOnBubble": true
+          },
+          {
+            "marketingInfoItemList": [
+              {
+                "template": "tagGray",
+                "text": "随时退·过期自动退",
+                "preText": null,
+                "postText": null,
+                "showOnBubble": false,
+                "bubbleText": "随时退·过期自动退",
+                "targetKey": "goodsTags",
+                "sortWeight": 0
+              },
+              {
+                "template": "tagGray",
+                "text": "免预约",
+                "preText": null,
+                "postText": null,
+                "showOnBubble": false,
+                "bubbleText": "免预约",
+                "targetKey": "goodsTags",
+                "sortWeight": 0
+              },
+              {
+                "template": "tagGray",
+                "text": "直播专享",
+                "preText": null,
+                "postText": null,
+                "showOnBubble": false,
+                "bubbleText": "直播专享",
+                "targetKey": "goodsTags",
+                "sortWeight": 0
+              },
+              {
+                "template": "tagGray",
+                "text": "直播优惠90",
+                "preText": null,
+                "postText": null,
+                "showOnBubble": false,
+                "bubbleText": "直播优惠90",
+                "targetKey": "goodsTags",
+                "sortWeight": 0
+              },
+              {
+                "template": "tagGray",
+                "text": "90%好评",
+                "preText": null,
+                "postText": null,
+                "showOnBubble": false,
+                "bubbleText": "90%好评",
+                "targetKey": "goodsTags",
+                "sortWeight": 0
+              },
+              {
+                "template": "tagGray",
+                "text": "直播优惠",
+                "preText": null,
+                "postText": null,
+                "showOnBubble": false,
+                "bubbleText": "直播优惠",
+                "targetKey": "goodsTags",
+                "sortWeight": 0
+              }
+            ],
+            "showOnBubble": false
+          }
+        ],
+        "buyStatus": 0,
+        "cantBuyText": null,
+        "userLike": null,
+        "reviewResultErrorInfo": null,
+        "customGoodsStatus": 104,
+        "remainStock": null,
+        "trackingInfo": {
+          "eventTracking": "{\"live_tracking_info\":{\"mlive_ext_map\":\"{\\\"mlid\\\":9068307,\\\"tid\\\":\\\"4623371e6fcb463db7312d71d425275c\\\",\\\"anchor_id\\\":431516}\"}}",
+          "shopId": 0,
+          "encryptShopId": null
+        },
+        "customExtension": {
+          "mlive_ext_map": "{\"mlid\":9068307,\"tid\":\"4623371e6fcb463db7312d71d425275c\",\"anchor_id\":431516}"
+        },
+        "goodsValidStatus": 0,
+        "bubblePopupStatus": 0,
+        "recommend": false,
+        "recommendTag": null,
+        "couponInfoList": null,
+        "addCouponStatus": 1,
+        "outBizGoodsId": "1199701503",
+        "goodsSellType": 0,
+        "extensionMap": {
+          "discnt_effort_live_stream_reduction": "90",
+          "halfScreenDetailUrl": "imeituan://www.meituan.com/mrn?id=1199701503&shopid=736356892&shopidEncrypt=qB4r117b7ea40bbe94ea62b025905d70711afcbe64359ae9791ea0c22835b372728d8c3b41ad86aeb4be712836225ff6vxu5&source=foodLiveStreaming&businessType=foodLiveStreaming&nibBizConsistency=gmV2peeKZ5C2xJqoC9o14FSLvcWhgwwkWP6FfVeiNlg4wK0FhgP3LNn_dw25stjTbB9VIJgx9d9xkFCdJmnK9dj6wvnqgvtaEwwbKsTKeGoHVrfbMW7OBP0kPUDxfCZk_FmGW39p-fBU3vHB0DZLnWOHFF7WePl3uhhbPhoPp3SJZ_dXXZEqAPnssChIMcAXhNfaAuI5v0ZMfhDYkxr1sbgT1A6fHIgbpMXyMT4ZL-tW4MhiYNKvQ1NFUSQtcLEMi0Kh-ltQ4I_e5cUjCjlA5Q&cApiFlowChannel=dpFoodLive&mrn_biz=meishi&mrn_component=food-deal&mrn_entry=food-deal&mliveSuppStyle=1&mrn_min_version=0.0.0",
+          "sales_channel_desc_list": "点评大牌,特团,直播,圈圈,商家私域售卖,好店特惠",
+          "productHide": "true",
+          "sales_channel_desc_list_id": "MTQQ,costEffective,foodLiveStreaming,dp_xianshimiaosha,private_domain,DP_POI_SPECIAL_PROMOTION",
+          "discnt_effort_goods_salable_coupon": "0",
+          "nibBizConsistency": "gmV2peeKZ5C2xJqoC9o14FSLvcWhgwwkWP6FfVeiNlg4wK0FhgP3LNn_dw25stjTbB9VIJgx9d9xkFCdJmnK9dj6wvnqgvtaEwwbKsTKeGoHVrfbMW7OBP0kPUDxfCZk_FmGW39p-fBU3vHB0DZLnWOHFF7WePl3uhhbPhoPp3SJZ_dXXZEqAPnssChIMcAXhNfaAuI5v0ZMfhDYkxr1sbgT1A6fHIgbpMXyMT4ZL-tW4MhiYNKvQ1NFUSQtcLEMi0Kh-ltQ4I_e5cUjCjlA5Q",
+          "canJumpToLiveDetail": "true",
+          "IS_MEMBER_PRODUCT": "false"
+        },
+        "hasRemind": null,
+        "secKillInfo": null,
+        "goodsNum": null,
+        "waimaiProductPackageUrl": null,
+        "commission": null,
+        "poiId": 736356892,
+        "distance": 10000,
+        "goodsOrderIndicatorInfo": null,
+        "goodsFlowIndicatorInfo": null,
+        "commissonRate": null,
+        "productId": null,
+        "explainStatus": 0,
+        "needQueryGoodsInfoBeforeHit": false,
+        "goodsDetailDisplayStyle": 0,
+        "halfScreenGoodsLinkUrl": null,
+        "goodsShelfType": null,
+        "canSell": false,
+        "notLiveSaleChannel": false,
+        "unLiveSaleReason": null,
+        "allowSelling": 1,
+        "seeExplainInfo": {
+          "goodsExplainStatus": 0,
+          "explainPlaybackUrl": null,
+          "duration": 0
+        },
+        "goodsDeliveryInfo": null,
+        "deleteGoodsFromInvestment": false,
+        "brandName": null,
+        "soldNum": null,
+        "salesChannelDescList": [
+          "点评大牌",
+          "特团",
+          "直播",
+          "圈圈",
+          "商家私域售卖",
+          "好店特惠"
+        ],
+        "defaultCityPriceShowTag": null,
+        "reductionActivityInfo": null,
+        "soldNumText": null,
+        "shopInfoDTO": null,
+        "hotSellingTag": null,
+        "subGoodsType": null,
+        "goodsTypeName": null,
+        "supportSecKill": true,
+        "notBeginSecKillActivityIds": null,
+        "secKillAvailableType": -1,
+        "filterReason": null,
+        "unauthorized": false,
+        "auditFailureReasons": null,
+        "shopStatisticalInfo": null,
+        "discountCouponList": null,
+        "explainTime": null,
+        "diagnosticTagList": null,
+        "afterBuyRebateInfo": null
+      },
+      {
+        "goodsId": "885732936",
+        "goodsType": 9,
+        "buId": 24,
+        "titleInfo": {
+          "title": "80 代 100 元代金券",
+          "titleTagList": null
+        },
+        "hot": false,
+        "top": false,
+        "index": 3,
+        "order": "3",
+        "goodsSaleStatus": 0,
+        "picUrl": "http://p0.meituan.net/content/1e90cb915dfca2f5134d7bbc0b013faf833323.png",
+        "goodsLinkUrl": "",
+        "degradeGoodsLinkUrl": "dianping://fooddealdetail?id=885732936&shopid=1801656025&shopidEncrypt=qB4r177078a608bd9ae362a637935f73610ee8e63d7690a06106e1ce2a76ee607d88922f49ead8bfb6b63467273b14a92evxu5&source=foodLiveStreaming&businessType=foodLiveStreaming&nibBizConsistency=gmV2peeKZ5C2xJqoC9o14FSLvcWhgwwkWP6FfVeiNlicUbGBV8OPUM0WlrF82zpK-fZAcywco7-FLk_1e6MZuD8osqZQkj-xMR4amdAsPFR4DSK-9a8tyfVdEmd1HApYm75HslxUa4bO0vG2gZK303dLgX1Qz6jstO6N9WMXmRkJX5KJUCvqS7OtWzszveyPFsxUWqGtno27KFDnGCdoUw&cApiFlowChannel=dpFoodLive&mrn_min_version=0.328.10&mlive_ext=%7B%22mlid%22%3A9068307%2C%22tid%22%3A%226f0431489459417599461ad1b868330f%22%2C%22anchor_id%22%3A431516%7D",
+        "goodsPriceInfo": {
+          "preText": null,
+          "postText": null,
+          "marketPrice": "100.00",
+          "salePrice": "80.00",
+          "salePriceSuffix": null,
+          "discount": null,
+          "crossPrice": null,
+          "priceTips": null,
+          "multiPriceDescription": null,
+          "priceAdjectiveTag": null,
+          "discountPrice": null,
+          "hidden": false,
+          "hiddenText": null,
+          "marketCrossPrice": null,
+          "reductionActivityTag": null,
+          "activityTagList": null,
+          "inGray": true,
+          "unitPrice": null,
+          "unitType": null,
+          "unitCount": null
+        },
+        "buttonList": [
+          {
+            "gray": false,
+            "template": "buy",
+            "text": "马上抢",
+            "linkUrl": "dianping://mrn?mrn_biz=meishi&mrn_entry=c-group-order-submit&mrn_component=GroupOrderSubmit&dealID=885732936&source=foodLiveStreaming&nibBizConsistency=gmV2peeKZ5C2xJqoC9o14FSLvcWhgwwkWP6FfVeiNlicUbGBV8OPUM0WlrF82zpK-fZAcywco7-FLk_1e6MZuD8osqZQkj-xMR4amdAsPFR4DSK-9a8tyfVdEmd1HApYm75HslxUa4bO0vG2gZK303dLgX1Qz6jstO6N9WMXmRkJX5KJUCvqS7OtWzszveyPFsxUWqGtno27KFDnGCdoUw&mlive_ext=%7B%22mlid%22%3A9068307%2C%22tid%22%3A%226f0431489459417599461ad1b868330f%22%2C%22anchor_id%22%3A431516%7D",
+            "hintText": null,
+            "bubbleButtonGray": false,
+            "halfScreenGoodsLinkUrl": null
+          }
+        ],
+        "marketingInfoAggList": [
+          {
+            "marketingInfoItemList": [
+              {
+                "template": "textGray",
+                "text": "雪牦汤锅",
+                "preText": null,
+                "postText": null,
+                "showOnBubble": false,
+                "bubbleText": "雪牦汤锅",
+                "targetKey": "recallShopInfo",
+                "sortWeight": 0
+              }
+            ],
+            "showOnBubble": true
+          },
+          {
+            "marketingInfoItemList": [
+              {
+                "template": "tagGray",
+                "text": "随时退·过期自动退",
+                "preText": null,
+                "postText": null,
+                "showOnBubble": false,
+                "bubbleText": "随时退·过期自动退",
+                "targetKey": "goodsTags",
+                "sortWeight": 0
+              },
+              {
+                "template": "tagGray",
+                "text": "免预约",
+                "preText": null,
+                "postText": null,
+                "showOnBubble": false,
+                "bubbleText": "免预约",
+                "targetKey": "goodsTags",
+                "sortWeight": 0
+              },
+              {
+                "template": "tagGray",
+                "text": "100%好评",
+                "preText": null,
+                "postText": null,
+                "showOnBubble": false,
+                "bubbleText": "100%好评",
+                "targetKey": "goodsTags",
+                "sortWeight": 0
+              },
+              {
+                "template": "textGrayRight",
+                "text": "已售3",
+                "preText": null,
+                "postText": null,
+                "showOnBubble": false,
+                "bubbleText": null,
+                "targetKey": null,
+                "sortWeight": 0
+              }
+            ],
+            "showOnBubble": false
+          }
+        ],
+        "buyStatus": 0,
+        "cantBuyText": null,
+        "userLike": null,
+        "reviewResultErrorInfo": null,
+        "customGoodsStatus": 104,
+        "remainStock": null,
+        "trackingInfo": {
+          "eventTracking": "{\"live_tracking_info\":{\"mlive_ext_map\":\"{\\\"mlid\\\":9068307,\\\"tid\\\":\\\"6f0431489459417599461ad1b868330f\\\",\\\"anchor_id\\\":431516}\"}}",
+          "shopId": 0,
+          "encryptShopId": null
+        },
+        "customExtension": {
+          "mlive_ext_map": "{\"mlid\":9068307,\"tid\":\"6f0431489459417599461ad1b868330f\",\"anchor_id\":431516}"
+        },
+        "goodsValidStatus": 0,
+        "bubblePopupStatus": 0,
+        "recommend": false,
+        "recommendTag": null,
+        "couponInfoList": null,
+        "addCouponStatus": 1,
+        "outBizGoodsId": "885732936",
+        "goodsSellType": 0,
+        "extensionMap": {
+          "discnt_effort_live_stream_reduction": "0",
+          "halfScreenDetailUrl": "imeituan://www.meituan.com/mrn?id=885732936&shopid=1801656025&shopidEncrypt=qB4r177078a608bd9ae362a637935f73610ee8e63d7690a06106e1ce2a76ee607d88922f49ead8bfb6b63467273b14a92evxu5&source=foodLiveStreaming&businessType=foodLiveStreaming&nibBizConsistency=gmV2peeKZ5C2xJqoC9o14FSLvcWhgwwkWP6FfVeiNlicUbGBV8OPUM0WlrF82zpK-fZAcywco7-FLk_1e6MZuD8osqZQkj-xMR4amdAsPFR4DSK-9a8tyfVdEmd1HApYm75HslxUa4bO0vG2gZK303dLgX1Qz6jstO6N9WMXmRkJX5KJUCvqS7OtWzszveyPFsxUWqGtno27KFDnGCdoUw&cApiFlowChannel=dpFoodLive&mrn_biz=meishi&mrn_component=food-deal&mrn_entry=food-deal&mliveSuppStyle=1&mrn_min_version=0.0.0",
+          "sales_channel_desc_list": "全部",
+          "productHide": "false",
+          "sales_channel_desc_list_id": "all",
+          "discnt_effort_goods_salable_coupon": "0",
+          "nibBizConsistency": "gmV2peeKZ5C2xJqoC9o14FSLvcWhgwwkWP6FfVeiNlicUbGBV8OPUM0WlrF82zpK-fZAcywco7-FLk_1e6MZuD8osqZQkj-xMR4amdAsPFR4DSK-9a8tyfVdEmd1HApYm75HslxUa4bO0vG2gZK303dLgX1Qz6jstO6N9WMXmRkJX5KJUCvqS7OtWzszveyPFsxUWqGtno27KFDnGCdoUw",
+          "canJumpToLiveDetail": "true",
+          "IS_MEMBER_PRODUCT": "false"
+        },
+        "hasRemind": null,
+        "secKillInfo": null,
+        "goodsNum": null,
+        "waimaiProductPackageUrl": null,
+        "commission": null,
+        "poiId": 1801656025,
+        "distance": 10000,
+        "goodsOrderIndicatorInfo": null,
+        "goodsFlowIndicatorInfo": null,
+        "commissonRate": null,
+        "productId": null,
+        "explainStatus": 0,
+        "needQueryGoodsInfoBeforeHit": false,
+        "goodsDetailDisplayStyle": 0,
+        "halfScreenGoodsLinkUrl": null,
+        "goodsShelfType": null,
+        "canSell": false,
+        "notLiveSaleChannel": false,
+        "unLiveSaleReason": null,
+        "allowSelling": 1,
+        "seeExplainInfo": {
+          "goodsExplainStatus": 0,
+          "explainPlaybackUrl": null,
+          "duration": 0
+        },
+        "goodsDeliveryInfo": null,
+        "deleteGoodsFromInvestment": false,
+        "brandName": null,
+        "soldNum": null,
+        "salesChannelDescList": [
+          "全部"
+        ],
+        "defaultCityPriceShowTag": null,
+        "reductionActivityInfo": null,
+        "soldNumText": null,
+        "shopInfoDTO": null,
+        "hotSellingTag": null,
+        "subGoodsType": null,
+        "goodsTypeName": null,
+        "supportSecKill": true,
+        "notBeginSecKillActivityIds": null,
+        "secKillAvailableType": -1,
+        "filterReason": null,
+        "unauthorized": false,
+        "auditFailureReasons": null,
+        "shopStatisticalInfo": null,
+        "discountCouponList": null,
+        "explainTime": null,
+        "diagnosticTagList": null,
+        "afterBuyRebateInfo": null
+      }
+    ],
+    "goodsOrderType": 1,
+    "deliveryStatus": 0,
+    "poiId": null,
+    "publicDomain": 1,
+    "pageParam": {
+      "pageStartNum": 1,
+      "pageEndNum": 1,
+      "hasNextPage": false,
+      "total": 3,
+      "pageNum": 1,
+      "pageSize": 100,
+      "totalPages": 0
+    },
+    "liveId": 9068307,
+    "unLiveGoodsCount": 0,
+    "inLiveGoodsCount": 0,
+    "degradeTag": 0,
+    "requestStrategyMap": {
+      "updateShelfWhenShelfClose": false,
+      "updateBubbleWhenShelfOpen": true
+    },
+    "encryptGoodsInfo": null,
+    "enableAnchorPage": false
+  }
+}
