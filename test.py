@@ -5,6 +5,7 @@ from goods import GoodsSpider
 def test_listen():
     short_url = "http://dpurl.cn/voNM8RIz"
     liveid = "9050450"
+    liveid = "9097130"
     MeituanListener().listern_live(liveid)
 
 
@@ -17,3 +18,4 @@ def test_goods():
 
 if __name__ == "__main__":
     test_goods()
+    test_listen()

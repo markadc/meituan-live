@@ -2,6 +2,7 @@ import time
 
 import requests as req
 from fake_useragent import UserAgent
+from loguru import logger
 
 from goods.tests.parse import parse_goods
 
@@ -59,6 +60,8 @@ class GoodsSpider():
         response = req.get(url, params=params, headers=self.headers)
         data = response.json()
         live_ids = [item["liveId"] for item in data["data"]]
+        if len(live_ids) == 0:
+            logger.warning("{} | 无直播计划".format(anchor_id))
         return live_ids
 
 
