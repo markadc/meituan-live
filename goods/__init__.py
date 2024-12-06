@@ -1,1 +1,1 @@
-from goods.spider import GoodsSpider
+from goods.goods_spiders import GoodsSpider
