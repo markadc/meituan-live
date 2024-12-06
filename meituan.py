@@ -4,7 +4,6 @@ from queue import Queue
 
 from loguru import logger
 from wauo import WauoSpider
-from wauo.utils import cprint
 
 
 class MeituanListener:
@@ -63,7 +62,6 @@ class MeituanListener:
             self.push(liveid)
             time.sleep(3)
             times += 1
-            # cprint("已访问{}次".format(times))
             print("\r已访问{}次".format(times), flush=True, end='')
 
     def pull(self):
