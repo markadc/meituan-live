@@ -34,6 +34,9 @@ class MeituanListener:
         }
         resp = self.req.send(url, params=params)
         jsdata = resp.json()
+        msgs = jsdata["messageVO"]["msgs"]
+        if not msgs:
+            logger.warning("直播间：{} | 无弹幕数据".format(liveid))
         for one in jsdata["messageVO"]["msgs"][::-1]:
             username = one["imUserDTO"]["userName"]
             content = one["imMsgDTO"]["content"]
