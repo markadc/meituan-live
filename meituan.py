@@ -1,31 +1,35 @@
 import threading
 import time
+from functools import partial
 from queue import Queue
 
-from loguru import logger
-from requests import Session
+import requests
+from wauo.utils import Loger, cprint
 
-session = Session()
-default_headers = {
-    "upgrade-insecure-requests": "1",
-    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0",
-}
+print = partial(cprint, color="red")
+
+loger = Loger()
+
+ua = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0"
+default_headers = {"upgrade-insecure-requests": "1", "user-agent": ua}
+
+session = requests.Session()
 session.headers.update(default_headers)
 
 
-class MeituanListener:
+class MeituanSpider:
     msg_queue = Queue()
-    items = []
+    unq_msgs = []
 
     def get_liveid(self, short_url: str) -> str:
         resp = session.get(short_url, allow_redirects=False)
         new_url = resp.headers["Location"]
-        logger.info("{} => {}".format(resp.status_code, new_url))
+        loger.info("{} => {}".format(resp.status_code, new_url))
         liveid = new_url.split("liveid=")[1].split("&")[0]
-        logger.info("已获取到liveid为{}".format(liveid))
+        loger.info("已获取到liveid为{}".format(liveid))
         return liveid
 
-    def add_msg(self, liveid: str):
+    def msg_to_queue(self, liveid: str):
         url = "https://i.meituan.com/mapi/dzu/live/livestudiobaseinfo.bin?"
         params = {
             "platform": "2",
@@ -45,16 +49,18 @@ class MeituanListener:
         try:
             msgs = jsdata["messageVO"]["msgs"]
             if not msgs:
-                logger.warning("直播间：{} | 无弹幕数据".format(liveid))
+                loger.warning("直播间：{} | 无弹幕数据".format(liveid))
                 return
         except:
-            logger.warning(resp.text)
+            loger.warning(resp.text)
             return
 
         for one in jsdata["messageVO"]["msgs"][::-1]:
             username = one["imUserDTO"]["userName"]
             uid = one["imUserDTO"]["userId"]
             content = one["imMsgDTO"]["content"]
+            commentId = one["imMsgDTO"]["commentId"]
+            unq_msg = "{} {} {} {}".format(username, uid, content, commentId)
             item = dict(
                 type="ChatMessage",
                 name=username,
@@ -62,46 +68,74 @@ class MeituanListener:
                 head_img="",
                 content=content,
             )
-            if item not in self.items:
-                self.items.append(item)
-                # print("[聊天] {}（{}）：{}".format(username, uid, content))
+            if unq_msg not in self.unq_msgs:
+                self.unq_msgs.append(unq_msg)
+                print("[聊天] {}（{}）：{}".format(username, uid, content))
                 self.msg_queue.put(item)
+            else:
+                loger.debug(f"重复了 {unq_msg}")
 
     def listen(self, liveid: str = None, short_url: str = None):
         assert liveid or short_url, "无目标源"
         liveid = liveid or self.get_liveid(short_url)
-        times = 0
         while True:
-            self.add_msg(liveid)
-            time.sleep(3)
-            times += 1
-            # print("\r已访问{}次".format(times), flush=True, end='')
+            self.msg_to_queue(liveid)
+            time.sleep(2)
 
-    def get_msg(self):
+    def pull_msg(self):
         try:
             return self.msg_queue.get(timeout=10)
         except:
             pass
 
+    def explain_goods(self, cookie, live_id, goods_id, goods_type_id):
+        headers = {"User-Agent": ua, "Cookie": cookie}
+        url = "https://mlive.meituan.com/live/centercontrol/component/goods/goodssettopendpoint"
+        params = {
+            "liveid": live_id,
+            "bizid": goods_id,
+            "bizType": goods_type_id,
+            "appid": "10",
+            "yodaReady": "h5",
+            "csecplatform": "4",
+            "csecversion": "2.4.0"
+        }
+        response = session.get(url, headers=headers, params=params)
+        print(response.text)
+
 
 def test():
     short_url = "http://dpurl.cn/voNM8RIz"
-    liveid = "9115262"
-    liveid = "9050450"
-    MeituanListener().listen(liveid)
+    liveid = "9393594"
+    MeituanSpider().listen(liveid)
 
 
 def test2():
-    liveid = "9162660"
-    meituan_listener = MeituanListener()
-    t1 = threading.Thread(target=meituan_listener.listen, args=(liveid,))
+    liveid = "9393594"
+    m = MeituanSpider()
+    t1 = threading.Thread(target=m.listen, args=(liveid,))
     t1.start()
 
     while True:
-        item = meituan_listener.get_msg()
+        item = m.pull_msg()
         if item:
-            logger.info(item)
+            loger.success(f"从队列取出  ==>  {item}")
+
+
+def test3():
+    """测试，弹商品卡"""
+    cookie = "uuid=90e82c208aae4c66b980.1731548694.1.0.0; _lxsdk_cuid=19328584150c8-0904ee868b3752-4c657b58-1fa400-19328584150c8; WEBDFPID=6w9zu3z2u8z35uwwz04745z319w8x4vx8067141vvu297958446wu7zu-2046908734983-1731548734548SOMGSWMfd79fef3d01d5e9aadc18ccd4d0c95071170; _ga=GA1.1.1078190637.1732238498; _ga_FSX5S86483=GS1.1.1732513784.2.0.1732513784.0.0.0; _ga_LYVVHCWVNG=GS1.1.1732513784.2.0.1732513784.0.0.0; iuuid=8CBE200AAAE11F3C9FC1305E8037CC1DBB492C39DEA4EAE4F593908FF2BEE706; _lxsdk=8CBE200AAAE11F3C9FC1305E8037CC1DBB492C39DEA4EAE4F593908FF2BEE706; _lx_utm=utm_source%3Dbing%26utm_medium%3Dorganic; __asource=pc; __UTYPE_3=3; lt=AgHTJR1IkrYB6kEp_meviJ93iVPbpMeB0WNeR7JP6Xbwi65ZpyUyunWXmD4owYjQs6_LEDtc9-oc2QAAAABrJQAAjtMC2-sOu2NCBGd80y_iIg6np6ezaMO6gqXwNXXW6o9fQflmhtlJULXOubhN7IK0; u=1843768220; n=Hjiah123; mlive_anchor_token=2mliveanchorAgHTJR1IkrYB6kEp_meviJ93iVPbpMeB0WNeR7JP6Xbwi65ZpyUyunWXmD4owYjQs6_LEDtc9-oc2QAAAABrJQAAjtMC2-sOu2NCBGd80y_iIg6np6ezaMO6gqXwNXXW6o9fQflmhtlJULXOubhN7IK0; __UTYPE_2=2; edper=AgHTJR1IkrYB6kEp_meviJ93iVPbpMeB0WNeR7JP6Xbwi65ZpyUyunWXmD4owYjQs6_LEDtc9-oc2QAAAABrJQAAjtMC2-sOu2NCBGd80y_iIg6np6ezaMO6gqXwNXXW6o9fQflmhtlJULXOubhN7IK0; token=AgHTJR1IkrYB6kEp_meviJ93iVPbpMeB0WNeR7JP6Xbwi65ZpyUyunWXmD4owYjQs6_LEDtc9-oc2QAAAABrJQAAjtMC2-sOu2NCBGd80y_iIg6np6ezaMO6gqXwNXXW6o9fQflmhtlJULXOubhN7IK0; pragma-newtoken=AgHTJR1IkrYB6kEp_meviJ93iVPbpMeB0WNeR7JP6Xbwi65ZpyUyunWXmD4owYjQs6_LEDtc9-oc2QAAAABrJQAAjtMC2-sOu2NCBGd80y_iIg6np6ezaMO6gqXwNXXW6o9fQflmhtlJULXOubhN7IK0; _lxsdk_s=193f158fa1d-4dd-160-65%7C%7C273"
+    live_id = "9393594"
+    # goods_id = "885732936"  # 80 代 100 元代金券
+    goods_id = "970184788"  # 60分钟足疗
+    # goods_id = "1192575776"  # 【疲劳解压】｜60分钟全身精油SPA
+    # goods_id = "1171387952"  # 【解压放松】精油开背｜刮痧
+    m = MeituanSpider()
+    # m.explain_goods(cookie, live_id, goods_id, 9)
+    m.explain_goods(cookie, live_id, goods_id, 13)
 
 
 if __name__ == "__main__":
-    test2()
+    # test()
+    # test2()
+    test3()
