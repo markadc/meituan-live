@@ -1,0 +1,815 @@
+{
+    "code": 0,
+    "msg": null,
+    "data": {
+        "goodsTotalCount": 4,
+        "goodsTypeCount": 1,
+        "goodsList": [
+            {
+                "goodsId": "1025224478",
+                "goodsType": 9,
+                "buId": 24,
+                "titleInfo": {
+                    "title": "47.5 代 50 元代金券",
+                    "titleTagList": null
+                },
+                "hot": false,
+                "top": false,
+                "index": 1,
+                "order": "1",
+                "goodsSaleStatus": 0,
+                "picUrl": "http://p0.meituan.net/deal/088f73b66af35553015aa401eea1df2e52119.jpg",
+                "goodsLinkUrl": "",
+                "degradeGoodsLinkUrl": "",
+                "goodsPriceInfo": {
+                    "preText": null,
+                    "postText": null,
+                    "marketPrice": "50",
+                    "salePrice": "47.5",
+                    "salePriceSuffix": null,
+                    "discount": null,
+                    "crossPrice": null,
+                    "priceTips": null,
+                    "multiPriceDescription": null,
+                    "priceAdjectiveTag": null,
+                    "discountPrice": null,
+                    "hidden": false,
+                    "hiddenText": null,
+                    "marketCrossPrice": null,
+                    "reductionActivityTag": null,
+                    "activityTagList": null,
+                    "inGray": true,
+                    "unitPrice": null,
+                    "unitType": null,
+                    "unitCount": null,
+                    "dealPrice": "47.50"
+                },
+                "buttonList": [],
+                "marketingInfoAggList": [
+                    {
+                        "marketingInfoItemList": [
+                            {
+                                "template": "textGray",
+                                "text": "两杯炭火烤肉（东岭店）",
+                                "preText": null,
+                                "postText": null,
+                                "showOnBubble": false,
+                                "bubbleText": "两杯炭火烤肉（东岭店）",
+                                "targetKey": "recallShopInfo",
+                                "sortWeight": 0
+                            }
+                        ],
+                        "showOnBubble": true
+                    },
+                    {
+                        "marketingInfoItemList": [
+                            {
+                                "template": "tagGray",
+                                "text": "随时退·过期自动退",
+                                "preText": null,
+                                "postText": null,
+                                "showOnBubble": false,
+                                "bubbleText": "随时退·过期自动退",
+                                "targetKey": "goodsTags",
+                                "sortWeight": 0
+                            },
+                            {
+                                "template": "tagGray",
+                                "text": "免预约",
+                                "preText": null,
+                                "postText": null,
+                                "showOnBubble": false,
+                                "bubbleText": "免预约",
+                                "targetKey": "goodsTags",
+                                "sortWeight": 0
+                            },
+                            {
+                                "template": "textGrayRight",
+                                "text": "87",
+                                "preText": null,
+                                "postText": null,
+                                "showOnBubble": false,
+                                "bubbleText": null,
+                                "targetKey": null,
+                                "sortWeight": 0
+                            }
+                        ],
+                        "showOnBubble": false
+                    }
+                ],
+                "buyStatus": 0,
+                "cantBuyText": null,
+                "userLike": {
+                    "likeTotal": 0,
+                    "goodsType": 9,
+                    "goodsId": "1025224478",
+                    "like": false
+                },
+                "reviewResultErrorInfo": null,
+                "customGoodsStatus": 104,
+                "remainStock": "-1",
+                "trackingInfo": {
+                    "eventTracking": "{\"live_tracking_info\":{\"mlive_ext_map\":\"{\\\"mlid\\\":9408079,\\\"tid\\\":\\\"75f81b715dc64ab381dfc1c82d7f5b44\\\",\\\"anchor_id\\\":439134}\"}}",
+                    "shopId": 0,
+                    "encryptShopId": null
+                },
+                "customExtension": {},
+                "goodsValidStatus": 0,
+                "bubblePopupStatus": 0,
+                "recommend": false,
+                "recommendTag": null,
+                "couponInfoList": null,
+                "addCouponStatus": 1,
+                "outBizGoodsId": "1025224478",
+                "goodsSellType": 0,
+                "extensionMap": {
+                    "discnt_effort_live_stream_reduction": "0",
+                    "halfScreenDetailUrl": "",
+                    "sales_channel_desc_list": "全部",
+                    "productHide": "false",
+                    "sales_channel_desc_list_id": "all",
+                    "discnt_effort_goods_salable_coupon": "0",
+                    "nibBizConsistency": "gmV2peeKZ5C2xJqoC9o14FSLvcWhgwwkWP6FfVeiNliVMsvkQHEDRZAKowcU-JsGbSx-TipmzEPI3kWydUbrm0DH1Ksd9EXmxa5Gif9vgQmEe7hllOhQNikVDW7_KTLWaiv8XXW-AGtZVPxr-YIUTPFGR_aQ1RaYAGNh2tKoFRYUKOnjJAOwhgpmV9WRgqu_98Z7aqQOb34exRfkVJeiAw",
+                    "canJumpToLiveDetail": "true",
+                    "IS_MEMBER_PRODUCT": "false",
+                    "DAOCAN_DEAL_EXT": "{\"voucherFlag\": True}"
+                },
+                "hasRemind": null,
+                "secKillInfo": null,
+                "goodsNum": null,
+                "waimaiProductPackageUrl": null,
+                "commission": null,
+                "poiId": 1622188974,
+                "distance": 10000,
+                "goodsOrderIndicatorInfo": {
+                    "remainStock": -2,
+                    "gtv": -1,
+                    "goodsCount": -1,
+                    "orderRate": null,
+                    "dealUserCount": null,
+                    "exposeDealRate": null
+                },
+                "goodsFlowIndicatorInfo": null,
+                "commissonRate": null,
+                "productId": null,
+                "explainStatus": 0,
+                "needQueryGoodsInfoBeforeHit": false,
+                "goodsDetailDisplayStyle": 0,
+                "halfScreenGoodsLinkUrl": null,
+                "goodsShelfType": 1,
+                "canSell": false,
+                "notLiveSaleChannel": false,
+                "unLiveSaleReason": null,
+                "allowSelling": 1,
+                "seeExplainInfo": {
+                    "goodsExplainStatus": 2,
+                    "explainPlaybackUrl": null,
+                    "duration": 0
+                },
+                "goodsDeliveryInfo": null,
+                "deleteGoodsFromInvestment": false,
+                "brandName": null,
+                "soldNum": null,
+                "salesChannelDescList": [
+                    "全部"
+                ],
+                "defaultCityPriceShowTag": null,
+                "reductionActivityInfo": null,
+                "soldNumText": null,
+                "shopInfoDTO": null,
+                "hotSellingTag": null,
+                "subGoodsType": null,
+                "goodsTypeName": "到餐商品",
+                "supportSecKill": true,
+                "notBeginSecKillActivityIds": null,
+                "secKillAvailableType": 2,
+                "filterReason": null,
+                "unauthorized": false,
+                "auditFailureReasons": null,
+                "shopStatisticalInfo": null,
+                "discountCouponList": null,
+                "explainTime": null,
+                "diagnosticTagList": null,
+                "afterBuyRebateInfo": null,
+                "explainedTag": null
+            },
+            {
+                "goodsId": "1209348083",
+                "goodsType": 9,
+                "buId": 24,
+                "titleInfo": {
+                    "title": "398 代 500 元代金券",
+                    "titleTagList": null
+                },
+                "hot": false,
+                "top": false,
+                "index": 2,
+                "order": "2",
+                "goodsSaleStatus": 0,
+                "picUrl": "http://p0.meituan.net/deal/4b0eb38e3154bbb9f4cc521eff255053111105.jpg",
+                "goodsLinkUrl": "",
+                "degradeGoodsLinkUrl": "",
+                "goodsPriceInfo": {
+                    "preText": null,
+                    "postText": null,
+                    "marketPrice": "500",
+                    "salePrice": "398",
+                    "salePriceSuffix": null,
+                    "discount": null,
+                    "crossPrice": null,
+                    "priceTips": null,
+                    "multiPriceDescription": null,
+                    "priceAdjectiveTag": null,
+                    "discountPrice": null,
+                    "hidden": false,
+                    "hiddenText": null,
+                    "marketCrossPrice": null,
+                    "reductionActivityTag": null,
+                    "activityTagList": [
+                        {
+                            "template": "tagPink",
+                            "text": "直播品",
+                            "code": 7,
+                            "rank": 1,
+                            "hover": "直播渠道可售，poi货架不可售商品",
+                            "activityTagType": null
+                        }
+                    ],
+                    "inGray": true,
+                    "unitPrice": null,
+                    "unitType": null,
+                    "unitCount": null,
+                    "dealPrice": "398.00"
+                },
+                "buttonList": [],
+                "marketingInfoAggList": [
+                    {
+                        "marketingInfoItemList": [
+                            {
+                                "template": "textGray",
+                                "text": "漫咖啡MAAN COFFEE轻食·披萨·牛排",
+                                "preText": null,
+                                "postText": "等2店铺通用",
+                                "showOnBubble": false,
+                                "bubbleText": "漫咖啡MAAN COFFEE轻食·披萨·牛排",
+                                "targetKey": "recallShopInfo",
+                                "sortWeight": 0
+                            }
+                        ],
+                        "showOnBubble": true
+                    },
+                    {
+                        "marketingInfoItemList": [
+                            {
+                                "template": "tagGray",
+                                "text": "随时退·过期自动退",
+                                "preText": null,
+                                "postText": null,
+                                "showOnBubble": false,
+                                "bubbleText": "随时退·过期自动退",
+                                "targetKey": "goodsTags",
+                                "sortWeight": 0
+                            },
+                            {
+                                "template": "tagGray",
+                                "text": "免预约",
+                                "preText": null,
+                                "postText": null,
+                                "showOnBubble": false,
+                                "bubbleText": "免预约",
+                                "targetKey": "goodsTags",
+                                "sortWeight": 0
+                            },
+                            {
+                                "template": "tagGray",
+                                "text": "直播专享",
+                                "preText": null,
+                                "postText": null,
+                                "showOnBubble": false,
+                                "bubbleText": "直播专享",
+                                "targetKey": "goodsTags",
+                                "sortWeight": 0
+                            }
+                        ],
+                        "showOnBubble": false
+                    }
+                ],
+                "buyStatus": 0,
+                "cantBuyText": null,
+                "userLike": {
+                    "likeTotal": 0,
+                    "goodsType": 9,
+                    "goodsId": "1209348083",
+                    "like": false
+                },
+                "reviewResultErrorInfo": null,
+                "customGoodsStatus": 104,
+                "remainStock": "-1",
+                "trackingInfo": {
+                    "eventTracking": "{\"live_tracking_info\":{\"mlive_ext_map\":\"{\\\"mlid\\\":9408079,\\\"tid\\\":\\\"905fb05d1bb94c8db375744fcae4879c\\\",\\\"anchor_id\\\":439134}\"}}",
+                    "shopId": 0,
+                    "encryptShopId": null
+                },
+                "customExtension": {},
+                "goodsValidStatus": 0,
+                "bubblePopupStatus": 0,
+                "recommend": false,
+                "recommendTag": null,
+                "couponInfoList": null,
+                "addCouponStatus": 1,
+                "outBizGoodsId": "1209348083",
+                "goodsSellType": 0,
+                "extensionMap": {
+                    "discnt_effort_live_stream_reduction": "0",
+                    "halfScreenDetailUrl": "",
+                    "sales_channel_desc_list": "直播,美团联盟（圈圈+分销联盟）",
+                    "productHide": "true",
+                    "sales_channel_desc_list_id": "MTQQ,foodLiveStreaming",
+                    "discnt_effort_goods_salable_coupon": "0",
+                    "nibBizConsistency": "gmV2peeKZ5C2xJqoC9o14FSLvcWhgwwkWP6FfVeiNljewj3ZmY7_EstckKlTCq-h9pU2X4GTy7IZnixeevtvQX_J7KmFiNmGtSSWr1CW5PitK54USuOMmjvpf7synORDept1_sUPi7MzUocFM_himeDyW7ahYmBR6HzfJVvjIXd3-if19A6n4VawUJ_JruxThUO6uoWoastyn9KMH5wrag",
+                    "canJumpToLiveDetail": "true",
+                    "IS_MEMBER_PRODUCT": "false",
+                    "DAOCAN_DEAL_EXT": "{\"voucherFlag\": True}"
+                },
+                "hasRemind": null,
+                "secKillInfo": null,
+                "goodsNum": null,
+                "waimaiProductPackageUrl": null,
+                "commission": null,
+                "poiId": 4791238,
+                "distance": 10000,
+                "goodsOrderIndicatorInfo": {
+                    "remainStock": -2,
+                    "gtv": -1,
+                    "goodsCount": -1,
+                    "orderRate": null,
+                    "dealUserCount": null,
+                    "exposeDealRate": null
+                },
+                "goodsFlowIndicatorInfo": null,
+                "commissonRate": null,
+                "productId": null,
+                "explainStatus": 0,
+                "needQueryGoodsInfoBeforeHit": false,
+                "goodsDetailDisplayStyle": 0,
+                "halfScreenGoodsLinkUrl": null,
+                "goodsShelfType": 1,
+                "canSell": false,
+                "notLiveSaleChannel": false,
+                "unLiveSaleReason": null,
+                "allowSelling": 1,
+                "seeExplainInfo": {
+                    "goodsExplainStatus": 2,
+                    "explainPlaybackUrl": null,
+                    "duration": 0
+                },
+                "goodsDeliveryInfo": null,
+                "deleteGoodsFromInvestment": false,
+                "brandName": null,
+                "soldNum": null,
+                "salesChannelDescList": [
+                    "直播",
+                    "美团联盟（圈圈+分销联盟）"
+                ],
+                "defaultCityPriceShowTag": null,
+                "reductionActivityInfo": null,
+                "soldNumText": null,
+                "shopInfoDTO": null,
+                "hotSellingTag": null,
+                "subGoodsType": null,
+                "goodsTypeName": "到餐商品",
+                "supportSecKill": true,
+                "notBeginSecKillActivityIds": null,
+                "secKillAvailableType": 2,
+                "filterReason": null,
+                "unauthorized": false,
+                "auditFailureReasons": null,
+                "shopStatisticalInfo": null,
+                "discountCouponList": null,
+                "explainTime": null,
+                "diagnosticTagList": null,
+                "afterBuyRebateInfo": null,
+                "explainedTag": null
+            },
+            {
+                "goodsId": "1209324711",
+                "goodsType": 9,
+                "buId": 24,
+                "titleInfo": {
+                    "title": "78 代 100 元代金券",
+                    "titleTagList": null
+                },
+                "hot": false,
+                "top": false,
+                "index": 3,
+                "order": "3",
+                "goodsSaleStatus": 0,
+                "picUrl": "http://p0.meituan.net/deal/338d01b881f9e5bb7daf32e95bc4d9ac107834.jpg",
+                "goodsLinkUrl": "",
+                "degradeGoodsLinkUrl": "",
+                "goodsPriceInfo": {
+                    "preText": null,
+                    "postText": null,
+                    "marketPrice": "100",
+                    "salePrice": "78",
+                    "salePriceSuffix": null,
+                    "discount": null,
+                    "crossPrice": null,
+                    "priceTips": null,
+                    "multiPriceDescription": null,
+                    "priceAdjectiveTag": null,
+                    "discountPrice": null,
+                    "hidden": false,
+                    "hiddenText": null,
+                    "marketCrossPrice": null,
+                    "reductionActivityTag": null,
+                    "activityTagList": [
+                        {
+                            "template": "tagPink",
+                            "text": "直播品",
+                            "code": 7,
+                            "rank": 1,
+                            "hover": "直播渠道可售，poi货架不可售商品",
+                            "activityTagType": null
+                        }
+                    ],
+                    "inGray": true,
+                    "unitPrice": null,
+                    "unitType": null,
+                    "unitCount": null,
+                    "dealPrice": "78.00"
+                },
+                "buttonList": [],
+                "marketingInfoAggList": [
+                    {
+                        "marketingInfoItemList": [
+                            {
+                                "template": "textGray",
+                                "text": "漫咖啡MAAN COFFEE轻食·披萨·牛排",
+                                "preText": null,
+                                "postText": "等2店铺通用",
+                                "showOnBubble": false,
+                                "bubbleText": "漫咖啡MAAN COFFEE轻食·披萨·牛排",
+                                "targetKey": "recallShopInfo",
+                                "sortWeight": 0
+                            }
+                        ],
+                        "showOnBubble": true
+                    },
+                    {
+                        "marketingInfoItemList": [
+                            {
+                                "template": "tagGray",
+                                "text": "随时退·过期自动退",
+                                "preText": null,
+                                "postText": null,
+                                "showOnBubble": false,
+                                "bubbleText": "随时退·过期自动退",
+                                "targetKey": "goodsTags",
+                                "sortWeight": 0
+                            },
+                            {
+                                "template": "tagGray",
+                                "text": "免预约",
+                                "preText": null,
+                                "postText": null,
+                                "showOnBubble": false,
+                                "bubbleText": "免预约",
+                                "targetKey": "goodsTags",
+                                "sortWeight": 0
+                            },
+                            {
+                                "template": "tagGray",
+                                "text": "直播专享",
+                                "preText": null,
+                                "postText": null,
+                                "showOnBubble": false,
+                                "bubbleText": "直播专享",
+                                "targetKey": "goodsTags",
+                                "sortWeight": 0
+                            }
+                        ],
+                        "showOnBubble": false
+                    }
+                ],
+                "buyStatus": 0,
+                "cantBuyText": null,
+                "userLike": {
+                    "likeTotal": 0,
+                    "goodsType": 9,
+                    "goodsId": "1209324711",
+                    "like": false
+                },
+                "reviewResultErrorInfo": null,
+                "customGoodsStatus": 104,
+                "remainStock": "-1",
+                "trackingInfo": {
+                    "eventTracking": "{\"live_tracking_info\":{\"mlive_ext_map\":\"{\\\"mlid\\\":9408079,\\\"tid\\\":\\\"4ef0374c482a49a4bac691560cab5d2a\\\",\\\"anchor_id\\\":439134}\"}}",
+                    "shopId": 0,
+                    "encryptShopId": null
+                },
+                "customExtension": {},
+                "goodsValidStatus": 0,
+                "bubblePopupStatus": 0,
+                "recommend": false,
+                "recommendTag": null,
+                "couponInfoList": null,
+                "addCouponStatus": 1,
+                "outBizGoodsId": "1209324711",
+                "goodsSellType": 0,
+                "extensionMap": {
+                    "discnt_effort_live_stream_reduction": "0",
+                    "halfScreenDetailUrl": "",
+                    "sales_channel_desc_list": "直播,美团联盟（圈圈+分销联盟）",
+                    "productHide": "true",
+                    "sales_channel_desc_list_id": "MTQQ,foodLiveStreaming",
+                    "discnt_effort_goods_salable_coupon": "0",
+                    "nibBizConsistency": "gmV2peeKZ5C2xJqoC9o14FSLvcWhgwwkWP6FfVeiNliZZRWMqZYVrgyVNgVrtye4MK2WYLDmh9663aPmenXY6YwAi5gOEsXqpBWbzELHzm_8LyVBgOuwZRrRTK8NUzV_aiv8XXW-AGtZVPxr-YIUTPFGR_aQ1RaYAGNh2tKoFRYOFt0S_P02e_24a-PkTgMxFaM-iIUb9JWP983vwfZRSw",
+                    "canJumpToLiveDetail": "true",
+                    "IS_MEMBER_PRODUCT": "false",
+                    "DAOCAN_DEAL_EXT": "{\"voucherFlag\": True}"
+                },
+                "hasRemind": null,
+                "secKillInfo": null,
+                "goodsNum": null,
+                "waimaiProductPackageUrl": null,
+                "commission": null,
+                "poiId": 4791238,
+                "distance": 10000,
+                "goodsOrderIndicatorInfo": {
+                    "remainStock": -2,
+                    "gtv": -1,
+                    "goodsCount": -1,
+                    "orderRate": null,
+                    "dealUserCount": null,
+                    "exposeDealRate": null
+                },
+                "goodsFlowIndicatorInfo": null,
+                "commissonRate": null,
+                "productId": null,
+                "explainStatus": 0,
+                "needQueryGoodsInfoBeforeHit": false,
+                "goodsDetailDisplayStyle": 0,
+                "halfScreenGoodsLinkUrl": null,
+                "goodsShelfType": 1,
+                "canSell": false,
+                "notLiveSaleChannel": false,
+                "unLiveSaleReason": null,
+                "allowSelling": 1,
+                "seeExplainInfo": {
+                    "goodsExplainStatus": 2,
+                    "explainPlaybackUrl": null,
+                    "duration": 0
+                },
+                "goodsDeliveryInfo": null,
+                "deleteGoodsFromInvestment": false,
+                "brandName": null,
+                "soldNum": null,
+                "salesChannelDescList": [
+                    "直播",
+                    "美团联盟（圈圈+分销联盟）"
+                ],
+                "defaultCityPriceShowTag": null,
+                "reductionActivityInfo": null,
+                "soldNumText": null,
+                "shopInfoDTO": null,
+                "hotSellingTag": null,
+                "subGoodsType": null,
+                "goodsTypeName": "到餐商品",
+                "supportSecKill": true,
+                "notBeginSecKillActivityIds": null,
+                "secKillAvailableType": 2,
+                "filterReason": null,
+                "unauthorized": false,
+                "auditFailureReasons": null,
+                "shopStatisticalInfo": null,
+                "discountCouponList": null,
+                "explainTime": null,
+                "diagnosticTagList": null,
+                "afterBuyRebateInfo": null,
+                "explainedTag": null
+            },
+            {
+                "goodsId": "962012760",
+                "goodsType": 9,
+                "buId": 24,
+                "titleInfo": {
+                    "title": "两杯烤肉招牌3人餐",
+                    "titleTagList": null
+                },
+                "hot": false,
+                "top": false,
+                "index": 4,
+                "order": "4",
+                "goodsSaleStatus": 0,
+                "picUrl": "http://p1.meituan.net/deal/ebc5d6fb4f6a12477dfce08b7542b937133905.jpg",
+                "goodsLinkUrl": "",
+                "degradeGoodsLinkUrl": "",
+                "goodsPriceInfo": {
+                    "preText": null,
+                    "postText": null,
+                    "marketPrice": "293",
+                    "salePrice": "158",
+                    "salePriceSuffix": null,
+                    "discount": "5.4折",
+                    "crossPrice": null,
+                    "priceTips": null,
+                    "multiPriceDescription": null,
+                    "priceAdjectiveTag": null,
+                    "discountPrice": null,
+                    "hidden": false,
+                    "hiddenText": null,
+                    "marketCrossPrice": null,
+                    "reductionActivityTag": null,
+                    "activityTagList": null,
+                    "inGray": true,
+                    "unitPrice": null,
+                    "unitType": null,
+                    "unitCount": null,
+                    "dealPrice": "158.00"
+                },
+                "buttonList": [],
+                "marketingInfoAggList": [
+                    {
+                        "marketingInfoItemList": [
+                            {
+                                "template": "textGray",
+                                "text": "两杯炭火烤肉（东岭店）",
+                                "preText": null,
+                                "postText": null,
+                                "showOnBubble": false,
+                                "bubbleText": "两杯炭火烤肉（东岭店）",
+                                "targetKey": "recallShopInfo",
+                                "sortWeight": 0
+                            }
+                        ],
+                        "showOnBubble": true
+                    },
+                    {
+                        "marketingInfoItemList": [
+                            {
+                                "template": "tagGray",
+                                "text": "随时退·过期自动退",
+                                "preText": null,
+                                "postText": null,
+                                "showOnBubble": false,
+                                "bubbleText": "随时退·过期自动退",
+                                "targetKey": "goodsTags",
+                                "sortWeight": 0
+                            },
+                            {
+                                "template": "tagGray",
+                                "text": "免预约",
+                                "preText": null,
+                                "postText": null,
+                                "showOnBubble": false,
+                                "bubbleText": "免预约",
+                                "targetKey": "goodsTags",
+                                "sortWeight": 0
+                            },
+                            {
+                                "template": "tagGray",
+                                "text": "100%好评",
+                                "preText": null,
+                                "postText": null,
+                                "showOnBubble": false,
+                                "bubbleText": "100%好评",
+                                "targetKey": "goodsTags",
+                                "sortWeight": 0
+                            },
+                            {
+                                "template": "textGrayRight",
+                                "text": "271",
+                                "preText": null,
+                                "postText": null,
+                                "showOnBubble": false,
+                                "bubbleText": null,
+                                "targetKey": null,
+                                "sortWeight": 0
+                            }
+                        ],
+                        "showOnBubble": false
+                    }
+                ],
+                "buyStatus": 0,
+                "cantBuyText": null,
+                "userLike": {
+                    "likeTotal": 0,
+                    "goodsType": 9,
+                    "goodsId": "962012760",
+                    "like": false
+                },
+                "reviewResultErrorInfo": null,
+                "customGoodsStatus": 104,
+                "remainStock": "-1",
+                "trackingInfo": {
+                    "eventTracking": "{\"live_tracking_info\":{\"mlive_ext_map\":\"{\\\"mlid\\\":9408079,\\\"tid\\\":\\\"5bb4f8f5dfab4413a79180eff3c528f8\\\",\\\"anchor_id\\\":439134}\"}}",
+                    "shopId": 0,
+                    "encryptShopId": null
+                },
+                "customExtension": {},
+                "goodsValidStatus": 0,
+                "bubblePopupStatus": 0,
+                "recommend": false,
+                "recommendTag": null,
+                "couponInfoList": null,
+                "addCouponStatus": 1,
+                "outBizGoodsId": "962012760",
+                "goodsSellType": 0,
+                "extensionMap": {
+                    "discnt_effort_live_stream_reduction": "0",
+                    "halfScreenDetailUrl": "",
+                    "sales_channel_desc_list": "全部",
+                    "productHide": "false",
+                    "sales_channel_desc_list_id": "all",
+                    "discnt_effort_goods_salable_coupon": "0",
+                    "nibBizConsistency": "gmV2peeKZ5C2xJqoC9o14FSLvcWhgwwkWP6FfVeiNlgrucyJw5DZ526tLDg6DhEM5tGj79wOG5p3fRqjgDYrqTD3ttiKWt6hubYOZQqyOlhRakceZdcck5MwyJOErx1PT17AWQPt3IQ2vW47Sxc7_AIyj8Gq9u9ggS9FF2I0IUH3G0SHbPN1Q16cGtDmnSY_dHHXzGEeXi8NngfNBx6_hA",
+                    "canJumpToLiveDetail": "true",
+                    "IS_MEMBER_PRODUCT": "false",
+                    "DAOCAN_DEAL_EXT": "{\"mealCountNum\":[3],\"voucherFlag\": False}"
+                },
+                "hasRemind": null,
+                "secKillInfo": null,
+                "goodsNum": null,
+                "waimaiProductPackageUrl": null,
+                "commission": null,
+                "poiId": 1622188974,
+                "distance": 10000,
+                "goodsOrderIndicatorInfo": {
+                    "remainStock": -2,
+                    "gtv": -1,
+                    "goodsCount": -1,
+                    "orderRate": null,
+                    "dealUserCount": null,
+                    "exposeDealRate": null
+                },
+                "goodsFlowIndicatorInfo": null,
+                "commissonRate": null,
+                "productId": null,
+                "explainStatus": 0,
+                "needQueryGoodsInfoBeforeHit": false,
+                "goodsDetailDisplayStyle": 0,
+                "halfScreenGoodsLinkUrl": null,
+                "goodsShelfType": 1,
+                "canSell": false,
+                "notLiveSaleChannel": false,
+                "unLiveSaleReason": null,
+                "allowSelling": 1,
+                "seeExplainInfo": {
+                    "goodsExplainStatus": 2,
+                    "explainPlaybackUrl": null,
+                    "duration": 0
+                },
+                "goodsDeliveryInfo": null,
+                "deleteGoodsFromInvestment": false,
+                "brandName": null,
+                "soldNum": null,
+                "salesChannelDescList": [
+                    "全部"
+                ],
+                "defaultCityPriceShowTag": null,
+                "reductionActivityInfo": null,
+                "soldNumText": null,
+                "shopInfoDTO": null,
+                "hotSellingTag": null,
+                "subGoodsType": null,
+                "goodsTypeName": "到餐商品",
+                "supportSecKill": true,
+                "notBeginSecKillActivityIds": null,
+                "secKillAvailableType": 2,
+                "filterReason": null,
+                "unauthorized": false,
+                "auditFailureReasons": null,
+                "shopStatisticalInfo": null,
+                "discountCouponList": null,
+                "explainTime": null,
+                "diagnosticTagList": null,
+                "afterBuyRebateInfo": null,
+                "explainedTag": null
+            }
+        ],
+        "goodsOrderType": 1,
+        "deliveryStatus": 0,
+        "poiId": null,
+        "publicDomain": 1,
+        "pageParam": {
+            "pageStartNum": 1,
+            "pageEndNum": 1,
+            "hasNextPage": false,
+            "total": 4,
+            "pageNum": 1,
+            "pageSize": 100,
+            "totalPages": 1
+        },
+        "liveId": 9408079,
+        "unLiveGoodsCount": 0,
+        "inLiveGoodsCount": 4,
+        "degradeTag": 0,
+        "requestStrategyMap": {
+            "updateShelfWhenShelfClose": false,
+            "updateBubbleWhenShelfOpen": true
+        },
+        "encryptGoodsInfo": null,
+        "enableAnchorPage": true
+    }
+}

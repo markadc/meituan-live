@@ -1,0 +1,18 @@
+{
+  "data": {
+    "login": true,
+    "loginUser": "3005615897",
+    "loginUserSystem": "meituan",
+    "userType": 2,
+    "anchorId": 439134,
+    "hasPermission": false,
+    "whiteUser": false,
+    "hasDealerPermission": true,
+    "loginToken": "AgFjIIzaiKoyBCEG7-iZ_uFLnM76roF_MKYO_3B7u9OE5jy9f8Pg4G0p9yX2Zr9fLettL1PAEGxbzQAAAABrJQAAGQeCD3n3x6juH1svRl_GcbR_xqvSDRERi2Uve14Dab98S4471YqbFvyyP1c8AdO8",
+    "loginTokenWithType": "2mliveanchorAgFjIIzaiKoyBCEG7-iZ_uFLnM76roF_MKYO_3B7u9OE5jy9f8Pg4G0p9yX2Zr9fLettL1PAEGxbzQAAAABrJQAAGQeCD3n3x6juH1svRl_GcbR_xqvSDRERi2Uve14Dab98S4471YqbFvyyP1c8AdO8",
+    "ext": null,
+    "loginAnchorBizId": 7400,
+    "certificateType": 3
+  },
+  "error": null
+}
