@@ -239,7 +239,7 @@ class MeituanSpider:
 def test1():
     short_url = "http://dpurl.cn/voNM8RIz"
     m = MeituanSpider()
-    m.listen(9493493)
+    m.listen(9496370)
 
 
 def test2(live_id=None):
@@ -266,7 +266,7 @@ def test3():
 
 
 if __name__ == "__main__":
-    # test1()
+    test1()
     # test2()
     # test3()
 
