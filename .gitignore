@@ -3,4 +3,3 @@
 *.py[cod]
 .DS_Store
 _*/
-tests/
