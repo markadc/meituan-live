@@ -17,7 +17,7 @@ session = requests.Session()
 session.headers.update(default_headers)
 
 red = partial(cprint, color="red")
-timef = lambda ts: datetime.fromtimestamp(ts / 1000).strftime("%Y/%m/%d %H:%M:%S")
+timef = lambda ts: datetime.fromtimestamp(ts / 1000).strftime("%Y-%m-%d %H:%M:%S")
 
 
 class MeituanSpider:
@@ -266,8 +266,8 @@ def test3():
 
 
 if __name__ == "__main__":
-    test1()
-    # test2()
+    # test1()
+    test2()
     # test3()
 
     m = MeituanSpider()
