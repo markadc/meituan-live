@@ -15,7 +15,7 @@
 
 ![](short_url.png)
 
-# 方式2
+## 方式2
 
 - 获取live_id
 
