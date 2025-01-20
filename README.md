@@ -36,5 +36,5 @@ m.listen(short_url=short_url)
 
 # 方式2
 live_id = "8742021"
-m.listen(live_id=short_url)
+m.listen(live_id=live_id)
 ```
