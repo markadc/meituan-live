@@ -1,6 +1,6 @@
-from meituan import MeituanSpider
+from meituan import MeituanBarrageSpider
 
-m = MeituanSpider()
+m = MeituanBarrageSpider()
 
 # 方式1
 short_url = "http://dpurl.cn/voNM8RIz"
