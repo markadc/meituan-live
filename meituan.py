@@ -124,7 +124,7 @@ class MeituanSpider:
         new_url = resp.headers["Location"]
         log.info("{} => {}".format(resp.status_code, new_url))
         live_id = new_url.split("liveid=")[1].split("&")[0]
-        log.info("已获取到liveid为{}".format(live_id))
+        log.info("已获取到 liveid 为{}".format(live_id))
         return str(live_id)
 
     def crawl_goods(self, live_id: str = None):
