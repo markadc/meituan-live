@@ -20,7 +20,7 @@ red = partial(cprint, color="red")
 timef = lambda ts: datetime.fromtimestamp(ts / 1000).strftime("%Y-%m-%d %H:%M:%S")
 
 
-class MeituanSpider:
+class MeituanBarrageSpider:
     """美团爬虫"""
 
     def __init__(self):
@@ -288,12 +288,12 @@ class MeituanSpider:
 def demo():
     live_id = 9496370
     short_url = "http://dpurl.cn/voNM8RIz"
-    m = MeituanSpider()
+    m = MeituanBarrageSpider()
     m.listen(live_id)
 
 
 def demo2(live_id=None):
-    m = MeituanSpider()
+    m = MeituanBarrageSpider()
     t = threading.Thread(target=m.listen, args=(live_id,))
     t.daemon = True
     t.start()
@@ -305,7 +305,7 @@ def demo2(live_id=None):
 
 def demo3(cookie: str):
     """随机弹一次商品卡"""
-    m = MeituanSpider()
+    m = MeituanBarrageSpider()
     m.ensure_cookie(cookie)
     ggs = m.crawl_goods()
     gg = random.choice(ggs)
@@ -315,7 +315,7 @@ def demo3(cookie: str):
 
 if __name__ == "__main__":
     # 2025/2/19 测试修改商品
-    meituan = MeituanSpider()
+    meituan = MeituanBarrageSpider()
     cookie = "uuid=90e82c208aae4c66b980.1731548694.1.0.0; _lxsdk_cuid=19328584150c8-0904ee868b3752-4c657b58-1fa400-19328584150c8; _ga=GA1.1.1078190637.1732238498; _ga_FSX5S86483=GS1.1.1732513784.2.0.1732513784.0.0.0; _ga_LYVVHCWVNG=GS1.1.1732513784.2.0.1732513784.0.0.0; iuuid=8CBE200AAAE11F3C9FC1305E8037CC1DBB492C39DEA4EAE4F593908FF2BEE706; _lxsdk=8CBE200AAAE11F3C9FC1305E8037CC1DBB492C39DEA4EAE4F593908FF2BEE706; lt=AgHbIEj86vnFq2i24xlwEclTj0n5IfQSpvYWRwQXytQA5yYEtbOBmRqy-MP5oRlo7iLcLv6brStarAAAAAAxJgAAPhLAzH0sKAz6ZjO8DD5pXeKxpz4WC4Yt7PyRTCROe-BZ_NIpGiGvqhM-21hQTlvf; u=3005615897; n=%E6%A9%99%E7%95%99%E9%A6%99aaa; mlive_anchor_token=2mliveanchorAgHbIEj86vnFq2i24xlwEclTj0n5IfQSpvYWRwQXytQA5yYEtbOBmRqy-MP5oRlo7iLcLv6brStarAAAAAAxJgAAPhLAzH0sKAz6ZjO8DD5pXeKxpz4WC4Yt7PyRTCROe-BZ_NIpGiGvqhM-21hQTlvf; __asource=pc; __UTYPE_2=2; edper=AgHbIEj86vnFq2i24xlwEclTj0n5IfQSpvYWRwQXytQA5yYEtbOBmRqy-MP5oRlo7iLcLv6brStarAAAAAAxJgAAPhLAzH0sKAz6ZjO8DD5pXeKxpz4WC4Yt7PyRTCROe-BZ_NIpGiGvqhM-21hQTlvf; token=AgHbIEj86vnFq2i24xlwEclTj0n5IfQSpvYWRwQXytQA5yYEtbOBmRqy-MP5oRlo7iLcLv6brStarAAAAAAxJgAAPhLAzH0sKAz6ZjO8DD5pXeKxpz4WC4Yt7PyRTCROe-BZ_NIpGiGvqhM-21hQTlvf; pragma-newtoken=AgHbIEj86vnFq2i24xlwEclTj0n5IfQSpvYWRwQXytQA5yYEtbOBmRqy-MP5oRlo7iLcLv6brStarAAAAAAxJgAAPhLAzH0sKAz6ZjO8DD5pXeKxpz4WC4Yt7PyRTCROe-BZ_NIpGiGvqhM-21hQTlvf; WEBDFPID=6w9zu3z2u8z35uwwz04745z319w8x4vx8067141vvu297958446wu7zu-1739927235146-1736302758502COKEQAYfd79fef3d01d5e9aadc18ccd4d0c95071380; _lxsdk_s=1951830902e-9f9-f02-81d%7C%7C29"
     meituan.ensure_cookie(cookie)
     meituan.live_id, gid, tid = 10038909, 1244770138, 9
