@@ -30,7 +30,7 @@ class MeituanSpider:
         self.__anchor_name = None
         self.__live_id = None
 
-    def login(self, cookie: str):
+    def ensure_cookie(self, cookie: str):
         self.cookie = cookie
         self.headers = {"User-Agent": ua, "Cookie": cookie}
 
@@ -62,6 +62,10 @@ class MeituanSpider:
             return self.__live_id
         self.__live_id = self.crawl_curr_live_id()
         return self.__live_id
+
+    @live_id.setter
+    def live_id(self, value):
+        self.__live_id = value
 
     @property
     def anchor_name(self) -> str:
@@ -232,20 +236,64 @@ class MeituanSpider:
             "csecplatform": "4",
             "csecversion": "2.4.0"
         }
-        response = session.get(url, headers=self.headers, params=params)
-        red(response.text)
+        res = session.get(url, headers=self.headers, params=params)
+        red(res.text)
+
+    def add_goods(self, goods_id, goods_type_id):
+        """添加直播商品"""
+        goods_id, goods_type_id = str(goods_id), str(goods_type_id)
+        api = "https://mlive.meituan.com/live/centercontrol/component/goods/goodsbatchaddendpoint"
+        params = {
+            "appid": "10",
+            "liveid": self.live_id,
+            "yodaReady": "h5",
+            "csecplatform": "4",
+            "csecversion": "3.1.0"
+        }
+        data = {
+            "liveid": self.live_id,
+            "hidden": False,
+            "goodsList": [
+                {
+                    "bizId": goods_id,
+                    "bizType": goods_type_id,
+                }
+            ],
+            "needResultExcel": False,
+            "appid": 10
+        }
+        res = requests.post(api, params=params, headers=self.headers, json=data)
+        red(res.text)
+
+    def delete_goods(self, goods_id, goods_type_id):
+        """删除直播商品"""
+        url = "https://mlive.meituan.com/live/centercontrol/component/goods/goodsdeleteendpoint"
+        params = {
+            "bizid": goods_id,
+            "biztype": goods_type_id,
+            "hidden": "false",
+            "liveid": self.live_id,
+            "appid": "10",
+            "yodaReady": "h5",
+            "csecplatform": "4",
+            "csecversion": "3.1.0"
+        }
+        res = requests.get(url, params, headers=self.headers)
+        red(res.text)
+
+    def sort_goods(self):
+        """排序直播商品"""
 
 
-def test1():
+def demo():
+    live_id = 9496370
     short_url = "http://dpurl.cn/voNM8RIz"
     m = MeituanSpider()
-    m.listen(9496370)
+    m.listen(live_id)
 
 
-def test2(live_id=None):
+def demo2(live_id=None):
     m = MeituanSpider()
-    cookie = "uuid=90e82c208aae4c66b980.1731548694.1.0.0; _lxsdk_cuid=19328584150c8-0904ee868b3752-4c657b58-1fa400-19328584150c8; WEBDFPID=6w9zu3z2u8z35uwwz04745z319w8x4vx8067141vvu297958446wu7zu-2046908734983-1731548734548SOMGSWMfd79fef3d01d5e9aadc18ccd4d0c95071170; _ga=GA1.1.1078190637.1732238498; _ga_FSX5S86483=GS1.1.1732513784.2.0.1732513784.0.0.0; _ga_LYVVHCWVNG=GS1.1.1732513784.2.0.1732513784.0.0.0; iuuid=8CBE200AAAE11F3C9FC1305E8037CC1DBB492C39DEA4EAE4F593908FF2BEE706; _lxsdk=8CBE200AAAE11F3C9FC1305E8037CC1DBB492C39DEA4EAE4F593908FF2BEE706; __asource=pc; __UTYPE_3=3; __UTYPE_2=2; _lx_utm=utm_source%3Dbing%26utm_medium%3Dorganic; mtcdn=K; lt=AgFjIIzaiKoyBCEG7-iZ_uFLnM76roF_MKYO_3B7u9OE5jy9f8Pg4G0p9yX2Zr9fLettL1PAEGxbzQAAAABrJQAAGQeCD3n3x6juH1svRl_GcbR_xqvSDRERi2Uve14Dab98S4471YqbFvyyP1c8AdO8; u=3005615897; n=%E6%A9%99%E7%95%99%E9%A6%99aaa; mlive_anchor_token=2mliveanchorAgFjIIzaiKoyBCEG7-iZ_uFLnM76roF_MKYO_3B7u9OE5jy9f8Pg4G0p9yX2Zr9fLettL1PAEGxbzQAAAABrJQAAGQeCD3n3x6juH1svRl_GcbR_xqvSDRERi2Uve14Dab98S4471YqbFvyyP1c8AdO8; edper=AgFjIIzaiKoyBCEG7-iZ_uFLnM76roF_MKYO_3B7u9OE5jy9f8Pg4G0p9yX2Zr9fLettL1PAEGxbzQAAAABrJQAAGQeCD3n3x6juH1svRl_GcbR_xqvSDRERi2Uve14Dab98S4471YqbFvyyP1c8AdO8; token=AgFjIIzaiKoyBCEG7-iZ_uFLnM76roF_MKYO_3B7u9OE5jy9f8Pg4G0p9yX2Zr9fLettL1PAEGxbzQAAAABrJQAAGQeCD3n3x6juH1svRl_GcbR_xqvSDRERi2Uve14Dab98S4471YqbFvyyP1c8AdO8; pragma-newtoken=AgFjIIzaiKoyBCEG7-iZ_uFLnM76roF_MKYO_3B7u9OE5jy9f8Pg4G0p9yX2Zr9fLettL1PAEGxbzQAAAABrJQAAGQeCD3n3x6juH1svRl_GcbR_xqvSDRERi2Uve14Dab98S4471YqbFvyyP1c8AdO8; _lxsdk_s=193fc982674-603-2ac-83d%7C%7C52"
-    m.login(cookie)
     t = threading.Thread(target=m.listen, args=(live_id,))
     t.daemon = True
     t.start()
@@ -255,10 +303,10 @@ def test2(live_id=None):
             log.success(f"从队列取出  ==>  {item}")
 
 
-def test3():
+def demo3(cookie: str):
+    """随机弹一次商品卡"""
     m = MeituanSpider()
-    cookie = "uuid=90e82c208aae4c66b980.1731548694.1.0.0; _lxsdk_cuid=19328584150c8-0904ee868b3752-4c657b58-1fa400-19328584150c8; WEBDFPID=6w9zu3z2u8z35uwwz04745z319w8x4vx8067141vvu297958446wu7zu-2046908734983-1731548734548SOMGSWMfd79fef3d01d5e9aadc18ccd4d0c95071170; _ga=GA1.1.1078190637.1732238498; _ga_FSX5S86483=GS1.1.1732513784.2.0.1732513784.0.0.0; _ga_LYVVHCWVNG=GS1.1.1732513784.2.0.1732513784.0.0.0; iuuid=8CBE200AAAE11F3C9FC1305E8037CC1DBB492C39DEA4EAE4F593908FF2BEE706; _lxsdk=8CBE200AAAE11F3C9FC1305E8037CC1DBB492C39DEA4EAE4F593908FF2BEE706; __asource=pc; __UTYPE_3=3; __UTYPE_2=2; _lx_utm=utm_source%3Dbing%26utm_medium%3Dorganic; mtcdn=K; lt=AgFjIIzaiKoyBCEG7-iZ_uFLnM76roF_MKYO_3B7u9OE5jy9f8Pg4G0p9yX2Zr9fLettL1PAEGxbzQAAAABrJQAAGQeCD3n3x6juH1svRl_GcbR_xqvSDRERi2Uve14Dab98S4471YqbFvyyP1c8AdO8; u=3005615897; n=%E6%A9%99%E7%95%99%E9%A6%99aaa; mlive_anchor_token=2mliveanchorAgFjIIzaiKoyBCEG7-iZ_uFLnM76roF_MKYO_3B7u9OE5jy9f8Pg4G0p9yX2Zr9fLettL1PAEGxbzQAAAABrJQAAGQeCD3n3x6juH1svRl_GcbR_xqvSDRERi2Uve14Dab98S4471YqbFvyyP1c8AdO8; edper=AgFjIIzaiKoyBCEG7-iZ_uFLnM76roF_MKYO_3B7u9OE5jy9f8Pg4G0p9yX2Zr9fLettL1PAEGxbzQAAAABrJQAAGQeCD3n3x6juH1svRl_GcbR_xqvSDRERi2Uve14Dab98S4471YqbFvyyP1c8AdO8; token=AgFjIIzaiKoyBCEG7-iZ_uFLnM76roF_MKYO_3B7u9OE5jy9f8Pg4G0p9yX2Zr9fLettL1PAEGxbzQAAAABrJQAAGQeCD3n3x6juH1svRl_GcbR_xqvSDRERi2Uve14Dab98S4471YqbFvyyP1c8AdO8; pragma-newtoken=AgFjIIzaiKoyBCEG7-iZ_uFLnM76roF_MKYO_3B7u9OE5jy9f8Pg4G0p9yX2Zr9fLettL1PAEGxbzQAAAABrJQAAGQeCD3n3x6juH1svRl_GcbR_xqvSDRERi2Uve14Dab98S4471YqbFvyyP1c8AdO8; _lxsdk_s=193fc982674-603-2ac-83d%7C%7C52"
-    m.login(cookie)
+    m.ensure_cookie(cookie)
     ggs = m.crawl_goods()
     gg = random.choice(ggs)
     print("弹出", gg)
@@ -266,19 +314,12 @@ def test3():
 
 
 if __name__ == "__main__":
-    pass
-    # test1()
-    # test2()
-    # test3()
-
-    # m = MeituanSpider()
-    # cookie = "uuid=90e82c208aae4c66b980.1731548694.1.0.0; _lxsdk_cuid=19328584150c8-0904ee868b3752-4c657b58-1fa400-19328584150c8; WEBDFPID=6w9zu3z2u8z35uwwz04745z319w8x4vx8067141vvu297958446wu7zu-2046908734983-1731548734548SOMGSWMfd79fef3d01d5e9aadc18ccd4d0c95071170; _ga=GA1.1.1078190637.1732238498; _ga_FSX5S86483=GS1.1.1732513784.2.0.1732513784.0.0.0; _ga_LYVVHCWVNG=GS1.1.1732513784.2.0.1732513784.0.0.0; iuuid=8CBE200AAAE11F3C9FC1305E8037CC1DBB492C39DEA4EAE4F593908FF2BEE706; _lxsdk=8CBE200AAAE11F3C9FC1305E8037CC1DBB492C39DEA4EAE4F593908FF2BEE706; __asource=pc; __UTYPE_3=3; __UTYPE_2=2; mtcdn=K; lt=AgFjIIzaiKoyBCEG7-iZ_uFLnM76roF_MKYO_3B7u9OE5jy9f8Pg4G0p9yX2Zr9fLettL1PAEGxbzQAAAABrJQAAGQeCD3n3x6juH1svRl_GcbR_xqvSDRERi2Uve14Dab98S4471YqbFvyyP1c8AdO8; u=3005615897; n=%E6%A9%99%E7%95%99%E9%A6%99aaa; mlive_anchor_token=2mliveanchorAgFjIIzaiKoyBCEG7-iZ_uFLnM76roF_MKYO_3B7u9OE5jy9f8Pg4G0p9yX2Zr9fLettL1PAEGxbzQAAAABrJQAAGQeCD3n3x6juH1svRl_GcbR_xqvSDRERi2Uve14Dab98S4471YqbFvyyP1c8AdO8; edper=AgFjIIzaiKoyBCEG7-iZ_uFLnM76roF_MKYO_3B7u9OE5jy9f8Pg4G0p9yX2Zr9fLettL1PAEGxbzQAAAABrJQAAGQeCD3n3x6juH1svRl_GcbR_xqvSDRERi2Uve14Dab98S4471YqbFvyyP1c8AdO8; token=AgFjIIzaiKoyBCEG7-iZ_uFLnM76roF_MKYO_3B7u9OE5jy9f8Pg4G0p9yX2Zr9fLettL1PAEGxbzQAAAABrJQAAGQeCD3n3x6juH1svRl_GcbR_xqvSDRERi2Uve14Dab98S4471YqbFvyyP1c8AdO8; pragma-newtoken=AgFjIIzaiKoyBCEG7-iZ_uFLnM76roF_MKYO_3B7u9OE5jy9f8Pg4G0p9yX2Zr9fLettL1PAEGxbzQAAAABrJQAAGQeCD3n3x6juH1svRl_GcbR_xqvSDRERi2Uve14Dab98S4471YqbFvyyP1c8AdO8; _lx_utm=utm_source%3Dbing%26utm_medium%3Dorganic; _lxsdk_s=1941565a9fc-afc-262-4b4%7C%7C544"
-    # m.login(cookie)
-    # m.crawl_goods()
-    # m.start_live()
-    # m.stop_live()
-
-    m = MeituanSpider()
-    cookie = "uuid=90e82c208aae4c66b980.1731548694.1.0.0; _lxsdk_cuid=19328584150c8-0904ee868b3752-4c657b58-1fa400-19328584150c8; _ga=GA1.1.1078190637.1732238498; _ga_FSX5S86483=GS1.1.1732513784.2.0.1732513784.0.0.0; _ga_LYVVHCWVNG=GS1.1.1732513784.2.0.1732513784.0.0.0; iuuid=8CBE200AAAE11F3C9FC1305E8037CC1DBB492C39DEA4EAE4F593908FF2BEE706; _lxsdk=8CBE200AAAE11F3C9FC1305E8037CC1DBB492C39DEA4EAE4F593908FF2BEE706; __asource=pc; __UTYPE_3=3; __UTYPE_2=2; _lx_utm=utm_source%3Dshare%26utm_term%3DAiphoneBgroupC12.26.206DcopyEpromotionG0000000000000F5AE49779F2F475F988C44C1B2794D17A15996731227975488120241121180458432%26utm_medium%3DiOSweb; lt=AgEaIA20JuUjO_VeAVjaiqf_s7ifBPRLs5mApcouPQk38bRV-L-npPEeQ7vhGXwRjm6cGoBhLQMKvAAAAADOJQAAU9oWgvvTJrcjzYa8wl8d_jf1CArBRp3rUQM-as_hPHkIXVMR4nKBWDdvw8idIbEc; u=3005615897; n=%E6%A9%99%E7%95%99%E9%A6%99aaa; mlive_anchor_token=2mliveanchorAgEaIA20JuUjO_VeAVjaiqf_s7ifBPRLs5mApcouPQk38bRV-L-npPEeQ7vhGXwRjm6cGoBhLQMKvAAAAADOJQAAU9oWgvvTJrcjzYa8wl8d_jf1CArBRp3rUQM-as_hPHkIXVMR4nKBWDdvw8idIbEc; edper=AgEaIA20JuUjO_VeAVjaiqf_s7ifBPRLs5mApcouPQk38bRV-L-npPEeQ7vhGXwRjm6cGoBhLQMKvAAAAADOJQAAU9oWgvvTJrcjzYa8wl8d_jf1CArBRp3rUQM-as_hPHkIXVMR4nKBWDdvw8idIbEc; token=AgEaIA20JuUjO_VeAVjaiqf_s7ifBPRLs5mApcouPQk38bRV-L-npPEeQ7vhGXwRjm6cGoBhLQMKvAAAAADOJQAAU9oWgvvTJrcjzYa8wl8d_jf1CArBRp3rUQM-as_hPHkIXVMR4nKBWDdvw8idIbEc; pragma-newtoken=AgEaIA20JuUjO_VeAVjaiqf_s7ifBPRLs5mApcouPQk38bRV-L-npPEeQ7vhGXwRjm6cGoBhLQMKvAAAAADOJQAAU9oWgvvTJrcjzYa8wl8d_jf1CArBRp3rUQM-as_hPHkIXVMR4nKBWDdvw8idIbEc; WEBDFPID=6w9zu3z2u8z35uwwz04745z319w8x4vx8067141vvu297958446wu7zu-2051662758502-1736302758502COKEQAYfd79fef3d01d5e9aadc18ccd4d0c95071380; _lxsdk_s=19443b5336c-7a1-8e4-f03%7C%7C59"
-    m.login(cookie)
-    m.crawl_goods("9604375")
+    # 2025/2/19 测试修改商品
+    meituan = MeituanSpider()
+    cookie = "uuid=90e82c208aae4c66b980.1731548694.1.0.0; _lxsdk_cuid=19328584150c8-0904ee868b3752-4c657b58-1fa400-19328584150c8; _ga=GA1.1.1078190637.1732238498; _ga_FSX5S86483=GS1.1.1732513784.2.0.1732513784.0.0.0; _ga_LYVVHCWVNG=GS1.1.1732513784.2.0.1732513784.0.0.0; iuuid=8CBE200AAAE11F3C9FC1305E8037CC1DBB492C39DEA4EAE4F593908FF2BEE706; _lxsdk=8CBE200AAAE11F3C9FC1305E8037CC1DBB492C39DEA4EAE4F593908FF2BEE706; lt=AgHbIEj86vnFq2i24xlwEclTj0n5IfQSpvYWRwQXytQA5yYEtbOBmRqy-MP5oRlo7iLcLv6brStarAAAAAAxJgAAPhLAzH0sKAz6ZjO8DD5pXeKxpz4WC4Yt7PyRTCROe-BZ_NIpGiGvqhM-21hQTlvf; u=3005615897; n=%E6%A9%99%E7%95%99%E9%A6%99aaa; mlive_anchor_token=2mliveanchorAgHbIEj86vnFq2i24xlwEclTj0n5IfQSpvYWRwQXytQA5yYEtbOBmRqy-MP5oRlo7iLcLv6brStarAAAAAAxJgAAPhLAzH0sKAz6ZjO8DD5pXeKxpz4WC4Yt7PyRTCROe-BZ_NIpGiGvqhM-21hQTlvf; __asource=pc; __UTYPE_2=2; edper=AgHbIEj86vnFq2i24xlwEclTj0n5IfQSpvYWRwQXytQA5yYEtbOBmRqy-MP5oRlo7iLcLv6brStarAAAAAAxJgAAPhLAzH0sKAz6ZjO8DD5pXeKxpz4WC4Yt7PyRTCROe-BZ_NIpGiGvqhM-21hQTlvf; token=AgHbIEj86vnFq2i24xlwEclTj0n5IfQSpvYWRwQXytQA5yYEtbOBmRqy-MP5oRlo7iLcLv6brStarAAAAAAxJgAAPhLAzH0sKAz6ZjO8DD5pXeKxpz4WC4Yt7PyRTCROe-BZ_NIpGiGvqhM-21hQTlvf; pragma-newtoken=AgHbIEj86vnFq2i24xlwEclTj0n5IfQSpvYWRwQXytQA5yYEtbOBmRqy-MP5oRlo7iLcLv6brStarAAAAAAxJgAAPhLAzH0sKAz6ZjO8DD5pXeKxpz4WC4Yt7PyRTCROe-BZ_NIpGiGvqhM-21hQTlvf; WEBDFPID=6w9zu3z2u8z35uwwz04745z319w8x4vx8067141vvu297958446wu7zu-1739927235146-1736302758502COKEQAYfd79fef3d01d5e9aadc18ccd4d0c95071380; _lxsdk_s=1951830902e-9f9-f02-81d%7C%7C29"
+    meituan.ensure_cookie(cookie)
+    meituan.live_id, gid, tid = 10038909, 1244770138, 9
+    meituan.delete_goods(gid, tid)
+    # meituan.add_goods(gid, tid)
+    # meituan.explain_goods(gid, tid)
+    # meituan.listen(meituan.live_id)
